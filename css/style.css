@@ -96,12 +96,14 @@ li {
     list-style: none;
 }
 
+
 .header {
     height: 100vh;
     background: url(../img/main-bannerr.png);
     background-position: center;
     background-size: contain;
     position: relative;
+    background-repeat: no-repeat;
 }
 
 
@@ -170,7 +172,6 @@ li {
     width: 90px;
     height: 100%;
     background: white;
-    display: flex;
     text-align: center;
     flex-direction: column;
     padding-top: 30px;
@@ -847,12 +848,13 @@ nav ul li a i:hover {
     }
 }
 
+/* 
 .footer {
     animation: appear4 linear;
     animation-timeline: view();
     animation-range: entry 0% cover 45%;
     padding-bottom: 100px;
-}
+} */
 
 
 
@@ -1391,13 +1393,13 @@ nav ul li a i:hover {
     margin-bottom: 60px;
 }
 
-.product-chair h1{
+.product-chair h1 {
     text-align: center;
     font-weight: 300 !important;
-    font-size: 52px; 
+    font-size: 52px;
 }
 
-.seat-c{
+.seat-c {
     background: white;
     padding: 50px 20px;
     border-radius: 40px;
@@ -1407,22 +1409,22 @@ nav ul li a i:hover {
 
 .seat-img {
     width: 340px;
-   
+
 }
 
 .seat-img img {
-    margin:0px  auto;
+    margin: 0px auto;
 }
 
-.seat-details h2{
+.seat-details h2 {
     font-size: 32px;
     font-weight: 300;
     margin-top: 30px;
 }
 
-.seat-d{
+.seat-d {
     background: white;
-    padding:  20px;
+    padding: 20px;
     border-radius: 40px;
     width: 100%;
     margin-top: 50px;
@@ -1432,31 +1434,35 @@ nav ul li a i:hover {
 }
 
 
-.seat-d img{
+.seat-d img {
     width: 90%;
     height: 100%;
 }
 
-.seat-d .seat-details h2{
+.seat-d .seat-details h2 {
     font-size: 32px;
     font-weight: 300;
     margin-top: 30px;
     margin-bottom: 10px;
 }
 
-.seat-s, .seat-c, .seat-d {
+.seat-s,
+.seat-c,
+.seat-d {
     transition: transform 0.4s ease;
 }
 
-.seat-s:hover, .seat-c:hover, .seat-d:hover {
+.seat-s:hover,
+.seat-c:hover,
+.seat-d:hover {
     transform: scale(1.05);
     z-index: 2;
     position: relative;
 }
 
-.seat-s{
+.seat-s {
     background: white;
-    padding:  20px;
+    padding: 20px;
     border-radius: 40px;
     width: 100%;
     margin-top: 50px;
@@ -1530,7 +1536,7 @@ nav ul li a i:hover {
     background-color: #001acc;
 }
 
-.contact-info{
+.contact-info {
     display: flex;
 }
 
@@ -1563,12 +1569,12 @@ nav ul li a i:hover {
 
 
 .visit,
-.phone{
+.phone {
     margin-bottom: 50px;
 }
 
 
-.aheader{
+.aheader {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.416), rgba(0, 0, 0, 0.164)), url(../img/banner\ \(4\).webp);
     height: 100vh;
     background-repeat: no-repeat;
@@ -1577,7 +1583,7 @@ nav ul li a i:hover {
     position: static;
 }
 
-.aheader{
+.aheader {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.416), rgba(0, 0, 0, 0.164)), url(../img/work/workshop.webp);
     height: 100vh;
     background-repeat: no-repeat;
@@ -1586,7 +1592,7 @@ nav ul li a i:hover {
     position: static;
 }
 
-.cheader{
+.cheader {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.416), rgba(0, 0, 0, 0.164)), url(../img/banner\ \(3\).webp);
     height: 100vh;
     background-repeat: no-repeat;
@@ -1630,8 +1636,9 @@ nav ul li a i:hover {
     padding: 20px;
     border-radius: 12px;
     background: #f9f9f9;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.06);
-    flex: 1 1 220px; /* ensures responsive sizing */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+    flex: 1 1 220px;
+    /* ensures responsive sizing */
     max-width: 250px;
 }
 
@@ -1639,7 +1646,7 @@ nav ul li a i:hover {
     width: 100%;
     height: auto;
     margin-bottom: 15px;
-    height:150px ;
+    height: 150px;
     overflow: hidden;
     object-fit: cover;
 }
@@ -1660,7 +1667,7 @@ nav ul li a i:hover {
 .about-img {
     width: 100%;
     border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     margin-left: 30px;
 }
 
@@ -1670,3 +1677,112 @@ nav ul li a i:hover {
     line-height: 1.7;
     margin-bottom: 20px;
 }
+
+
+
+/* Responsive Start*/
+
+
+@media screen and (min-width:320px) and (max-width:425px) {
+    .container {
+        width: 100%;
+    }
+
+    .row {
+        margin: 0px 15px;
+        padding: 0px 15px;
+    }
+
+    [class*=col-sm-] {
+        width: 100%;
+    }
+
+    .d-flex {
+        display: block;
+    }
+
+
+    .import {
+        margin-top: 150px;
+    }
+
+    .trans-text p {
+        display: none;
+    }
+
+    #header{
+        animation: none;
+    }
+
+    .header {
+        height: 400px;
+    }
+
+    .banner {
+        position: static;
+        padding: 0px;
+    }
+
+    .banner h1 {
+        font-size: 42px;
+
+    }
+
+    .banner p {
+        font-size: 12px;
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+
+    .banner a {
+        padding: 5px 15px;
+    }
+
+    .right-nav {
+        top: 27px;
+        right: 10px;
+    }
+
+    .left-nav {
+        height: auto;
+        background: none;
+        box-shadow: none;
+
+    }
+
+    nav,
+    .import {
+        display: none;
+    }
+
+    .what-we-offer,
+    .resaon {
+        animation: none;
+        padding: 10px 0px;
+    }
+
+
+
+
+
+
+
+
+
+
+    .gitouch {
+        display: none;
+    }
+
+
+
+
+    .product-head h1 {
+        font-size: 32px;
+    }
+
+
+}
+
+
+/* Responsive End*/
